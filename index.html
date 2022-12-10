@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HP Matching Game</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>HP Matching Game<span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="game-status-details">
+                <div class="rating">
+                    <span class="hat">🧙🏼‍♀️</span>
+                    <span class="wand">🪄</span>
+                    <span class="bolt">⚡️</span>
+                    <span class="owl">🦉</span>
+                    <span class="magic">🔮</span>
+                </div>
+                <span class="move-counter" id="moveCounter"></span>
+                <span class="timer" id="timer">0 mins 0 secs</span>
+                <button class="restart-btn" id="restartBtn" onClick="startGame()" aria-label="restart game">↻</button>
+            </div>
+            <table class="game-board">
+                <tbody class="game-grid">
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/HP LOGO.png" alt="HP logo">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/golden snitch.jpeg" alt="golden snitch">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/hedwig.jpeg" alt="hedwig">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/Gryffindor.png" alt="Gryffindor">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/sorting hat.jpeg" alt="sorting hat">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/dobby.jpg" alt="dobby">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/dumbledore.jpeg" alt="dumbledore">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/dumbledore.jpeg" alt="dumbledore">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/golden snitch.jpeg" alt="golden snitch">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/deathly hallows.jpeg" alt="deathly hallows">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/Gryffindor.png" alt="Gryffindor">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/sorting hat.jpeg" alt="sorting hat">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/dobby.jpg" alt="dobby">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/deathly hallows.jpeg" alt="dealthy hallows">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/hedwig.jpeg" alt="hedwig">
+                        </td>
+                        <td class="game-card">
+                            <img class="game-card-img" src="images/HP LOGO.png" alt="HP logo">
+                        </td>
+                    </tr>
+                </tbody>               
+            </table>
+            <div class="restart-button-div">
+                <button class="restart-button brown-button" id="restartButton" onClick="startGame()">Restart ↻</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

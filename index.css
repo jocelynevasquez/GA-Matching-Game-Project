@@ -1,0 +1,147 @@
+body {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    background-image: url('images/HP\ dining\ hall.jpeg');
+    background-repeat: repeat;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+em {
+    font-style: italic;
+}
+
+.brown-button {
+	box-shadow: 3px 4px 0px 0px #cbaaa068;
+	background: -o-linear-gradient(top, #A1887F 5%, #795548 100%);
+	background: -ms-linear-gradient(top, #A1887F 5%, #795548 100%);
+	background: linear-gradient(to bottom, #A1887F 5%, #795548 100%);
+	background-color: #A1887F;
+	border-radius: 0.3em;
+	border: 1px solid #6D4C41;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #8D6E63;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 0.6em;
+    color: #A1887F;
+}
+
+.game-status-details {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;   
+    padding: 0.3em;
+    text-align: center;
+}
+
+.rating,
+.move-counter,
+.timer,
+.restart-btn {
+    width: 100%;
+}
+
+.move-counter, .timer {
+    font-size: 1.3em;
+}
+
+.restart-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.game-board {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A1887F;
+    border-radius: 0.3em;
+    box-shadow: 0 5px 5px #808080;
+}
+
+.game-grid-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.game-card {
+    width: 4.5em;
+    height: 4.5em;
+    background-color: #212121;
+    border-radius: 0.3em;
+    margin: 0.8em;
+    box-shadow: 2px 0 10px #212121;
+    cursor: pointer;
+}
+
+.game-card-img {
+    visibility: hidden;
+    object-fit: cover;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.restart-button-div {
+    max-width: 50%;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+.restart-button { 
+	padding: 0.7em 1.4em;
+}
+
+/* Page Footer */
+.page-footer {
+    border-top: 1px solid #D7CCC8;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.page-footer-link {
+    color: #5D4037;
+    font-weight: 700;
+}
+
+.page-footer-link:hover {
+    color: #212121;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.page-footer-link:active {
+    text-decoration: none;
+}   
+
+.page-footer-link:focus {
+    outline: #A1887F auto 5px;
+}
+
+.page-footer-link:visited {
+    color: #3E2723;
+}
+
+.show-img {
+    visibility: visible;
+    animation: animateShowImage 0.4s linear alternate;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.show-modal {
+    display: block;
+}
